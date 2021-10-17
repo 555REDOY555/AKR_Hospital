@@ -1,0 +1,51 @@
+.BACKGROUND{
+     background-image: url(https://www.wpa.org.uk/_nuxt/img/healthcare-providers.4416666.jpg);
+     padding-bottom: 300px;
+    
+     background-color: rgba(0,0,0,.4);
+     background-size: cover;
+     
+}
+.BACKGROUND img{
+     width: 100%;
+}
+.Home-h3-tag-banner{
+     margin-left: 150px;
+     margin-top: 200px;
+     font-size: 18px;
+}
+.Home-h1-tag-banner{
+     margin-left: 150px;
+     margin-top: 30px;
+     font-size: 50px;
+}
+.Home-h2-tag-banner{
+     margin-left: 150px;
+     margin-top: 30px;
+     font-size: 20px;
+}
+
+.card-1{
+     background-image: url(https://www.wpa.org.uk/_nuxt/img/medical-fees-sm.5b5a467.jpg);
+     background-size: cover;
+     
+}
+.card-2{
+     background-image: url(https://www.wpa.org.uk/_nuxt/img/apply-for-wpa-recognition-sm.7b4f5af.jpg);
+     background-size: cover;
+     
+}
+.card-3{
+     background-image: url(https://www.wpa.org.uk/_nuxt/img/guidance-for-providers-sm.7c438a2.jpg);
+     background-size: cover;
+     
+}
+.card-4{
+     background-image: url(https://www.wpa.org.uk/_nuxt/img/healthcare-provider-search-sm.844b73e.jpg);
+     background-size: cover;
+     
+}
+
+.card img {
+     height: 500px;
+}

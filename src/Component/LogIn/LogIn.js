@@ -1,16 +1,53 @@
 import Button from '@restart/ui/esm/Button';
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import initialize from '../FireBase/FireBaseInit';
+
+
+initialize()
 
 const LogIn = () => {
-     const { SingInWithGoogle, singInwithGitHub, handleEmailChange,
-          handlePasswordChange, EnterDetails } = useAuth();
+     const auth = getAuth();
 
-     const location = useLocation();
+     const { SingInWithGoogle, singInwithGitHub } = useAuth();
 
      const history = useHistory()
+     const [error, setError] = useState('')
+     const [email, setEmail] = useState("")
+     const [password, setPassword] = useState("")
+
+
+
+     const handleEmailChange = e => {
+          setEmail(e.target.value)
+     }
+     const handlePasswordChange = e => {
+          if (e.target.value < 6) {
+
+          }
+
+          setPassword(e.target.value)
+     }
+
+
+     const logIn = (e) => {
+          e.preventDefault();
+          signInWithEmailAndPassword(auth, email, password)
+               .then((result) => {
+                    console.log(result.user)
+                    history.push('/home')
+               })
+               .catch((error) => {
+                    setError(error.message);
+                    // ..
+               });
+     }
+
+
+
 
 
 
@@ -34,7 +71,7 @@ const LogIn = () => {
 
      return (
           <div>
-               <Form onSubmit={EnterDetails} className="mx-5 mt-3">
+               <Form onSubmit={logIn} className="mx-5 mt-3">
                     <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                          <Form.Label column sm={2}>
                               Email

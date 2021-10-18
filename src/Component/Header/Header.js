@@ -20,16 +20,18 @@ const Header = () => {
                                    <Nav.Link className="navbar" as={HashLink} to="/home">Home</Nav.Link>
                                    <Nav.Link className="navbar" as={HashLink} to="/About">About</Nav.Link>
                                    <Nav.Link className="navbar" as={HashLink} to="/servise">Servise</Nav.Link>
-                                   {user?.email && <span style={{ color: 'white' }}>Hello {user.email} </span>}
+                                   <div className="">
+                                        {user?.accessToken && <span style={{ color: 'white' }}>Hello {user.displayName} </span>}
 
 
-                                   {user?.email ?
-                                        <button onClick={logOut} >Log-Out</button>
-                                        :
-                                        <Nav.Link as={HashLink} to="/login">LogIn</Nav.Link>
+                                        {user?.accessToken ?
+                                             <button onClick={logOut} className=" btn-info" >Log-Out</button>
+                                             :
+                                             <Nav.Link as={HashLink} to="/login">LogIn</Nav.Link>
 
 
-                                   }
+                                        }
+                                   </div>
                               </Nav>
                               <Form className="d-flex flex-fill mx-5">
                                    <FormControl

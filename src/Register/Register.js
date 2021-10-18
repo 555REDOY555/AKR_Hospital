@@ -1,15 +1,52 @@
 import Button from '@restart/ui/esm/Button';
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../Hook/useAuth';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import initialize from '../Component/FireBase/FireBaseInit';
+
+
+initialize()
 
 
 const Register = () => {
-     const { SingInWithGoogle, singInwithGitHub, handleEmailChange,
-          handlePasswordChange, heandleRegistration, error } = useAuth();
-
+     const auth = getAuth();
      const history = useHistory()
+     const [error, setError] = useState('')
+     const [email, setEmail] = useState("")
+     const [password, setPassword] = useState("")
+
+     const { SingInWithGoogle, singInwithGitHub } = useAuth()
+
+
+     const handleEmailChange = e => {
+          setEmail(e.target.value)
+     }
+     const handlePasswordChange = e => {
+          if (e.target.value < 6) {
+
+          }
+
+          setPassword(e.target.value)
+     }
+
+
+
+     const handleRegistration = (e) => {
+          e.preventDefault();
+          createUserWithEmailAndPassword(auth, email, password)
+               .then((result) => {
+                    console.log(result.user)
+                    history.push('/home')
+               })
+               .catch((error) => {
+                    setError(error.message);
+                    // ..
+               });
+     }
+
+
 
 
 
@@ -33,7 +70,7 @@ const Register = () => {
 
      return (
           <div>
-               <Form onSubmit={heandleRegistration} className="m-5" >
+               <Form onSubmit={handleRegistration} className="m-5" >
 
                     <div className="row mb-3 ">
                          <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>

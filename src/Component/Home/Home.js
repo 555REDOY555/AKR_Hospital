@@ -10,7 +10,7 @@ const Home = () => {
           <div>
 
                <div className="row">
-                    <div class="card  b-5">
+                    <div class="card">
                          <img src={photo} class="card-img" alt="..." />
                          <div class="card-img-overlay">
                               <h5 class="card-title Home-h3-tag-banner ">Homepage Healthcare / providers</h5>
@@ -19,7 +19,7 @@ const Home = () => {
                          </div>
                          <div className="text-center mt-5">
                               <h1 >Healthcare provider information</h1>
-                              <p className="mt-5 "  >Our members are free to choose where, when and who provides them with treatment. All we ask is that you register with us for <br />
+                              <p className="mt-5 pb-5 "  >Our members are free to choose where, when and who provides them with treatment. All we ask is that you register with us for <br />
                                    recognition first. If you are not registered, but would like to be, please select 'Apply for WPA recognition' below.</p>
                          </div>
 
@@ -43,9 +43,10 @@ const Home = () => {
                                    <div className="card">
 
                                         <div className="card-body card-2 text-center">
-                                             <h5 className="card-title  fs-1 pb-5 ">Check medical fees</h5>
+                                             <h5 className="card-title  fs-1 pb-5 ">Apply for WPA
+                                                  recognition</h5>
                                              <div className=" py-5">
-                                                  <p className="card-text ">Search the WPA Fee Schedule to find out what amounts we will pay towards the fee charged by a specialist.</p>
+                                                  <p className="card-text ">Become recognised by WPA to allow our members to make use of your services.</p>
                                                   <Link to="/servise" > <button className="btn btn-warning" >Go To Servise</button>
                                                   </Link>
                                              </div>
@@ -56,9 +57,9 @@ const Home = () => {
                                    <div className="card">
 
                                         <div className="card-body card-3 text-center">
-                                             <h5 className="card-title  fs-1 pb-5 ">Check medical fees</h5>
+                                             <h5 className="card-title  fs-1 pb-5 ">Guidance for providers</h5>
                                              <div className=" py-5">
-                                                  <p className="card-text ">Search the WPA Fee Schedule to find out what amounts we will pay towards the fee charged by a specialist.</p>
+                                                  <p className="card-text ">Important information covering areas such as treatment pre-authorisation and invoice processing.</p>
                                                   <Link to="/servise" > <button className="btn btn-warning" >Go To Servise</button>
                                                   </Link>
                                              </div>
@@ -69,9 +70,10 @@ const Home = () => {
                                    <div className="card">
 
                                         <div className="card-body card-4 text-center">
-                                             <h5 className="card-title  fs-1 pb-5 ">Check medical fees</h5>
+                                             <h5 className="card-title  fs-1 pb-5 ">Healthcare provider
+                                                  search</h5>
                                              <div className=" py-5">
-                                                  <p className="card-text ">Search the WPA Fee Schedule to find out what amounts we will pay towards the fee charged by a specialist.</p>
+                                                  <p className="card-text ">Search for healthcare providers registered with WPA, along with any relevant contact details.</p>
                                                   <Link to="/servise" > <button className="btn btn-warning" >Go To Servise</button>
                                                   </Link>
                                              </div>

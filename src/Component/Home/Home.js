@@ -10,7 +10,7 @@ const Home = () => {
           <div>
 
                <div className="row">
-                    <div class="card bg-dark text-white">
+                    <div class="card  b-5">
                          <img src={photo} class="card-img" alt="..." />
                          <div class="card-img-overlay">
                               <h5 class="card-title Home-h3-tag-banner ">Homepage Healthcare / providers</h5>

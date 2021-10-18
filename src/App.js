@@ -10,6 +10,8 @@ import LogIn from './Component/LogIn/LogIn';
 import Register from './Register/Register';
 import AuthProvider from './Context/AuthProvider';
 import PrivatRoute from './Component/PrivatRoute/PrivatRoute';
+import NotFound from './NotFound/NotFound';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <AuthProvider>
         <Router>
           <Header />
+
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -24,10 +27,10 @@ function App() {
             <Route exact path="/home">
               <Home></Home>
             </Route>
-            <Route exact path='/servise'>
+            <PrivatRoute exact path='/servise'>
               <Servise></Servise>
-            </Route>
-            <PrivatRoute path="/details" >
+            </PrivatRoute>
+            <PrivatRoute path="/details/:kye" >
               <Details></Details>
             </PrivatRoute>
             <Route exact path="/login">
@@ -36,8 +39,15 @@ function App() {
             <Route exact path="/register">
               <Register></Register>
             </Route>
+            <Route exact path="/about">
+
+            </Route>
+            <Route path='*'>
+              <NotFound></NotFound>
+            </Route>
           </Switch>
         </Router>
+        <Footer />
       </AuthProvider>
     </div>
   );

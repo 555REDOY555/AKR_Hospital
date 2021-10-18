@@ -1,14 +1,14 @@
 [
      {
-          "kye": 1,
+          "_kye": 1,
           "Name": "Primary care",
           "text": "Trips to your doctor or women’s healthcare provider are included in your plan.",
-          "Price": 2000,
+          "price": 2000,
           "ds": "Primary care is the day-to-day healthcare given by a health care provider. Typically this provider acts as the first contact and principal point of continuing care for patients within a healthcare system, and coordinates other specialist care that the patient may need.[1][2][3] Patients commonly receive primary care from professionals such as a primary care physician (general practitioner or family physician), a physician assistant, or a nurse practitioner. In some localities, such a professional may be a registered nurse, a pharmacist, a clinical officer (as in parts of Africa), or an Ayurvedic or other traditional medicine professional (as in parts of Asia). Depending on the nature of the health condition, patients may then be referred for secondary or tertiary care.",
           "img": "https://i.ibb.co/c3spRyf/pexels-photo-7282843.png"
      },
      {
-          "kye": 2,
+          "_kye": 2,
           "Name": "Behavioral Health",
           "price": 35000,
           "ds": "Behavioral medicine is concerned with the integration of knowledge in the biological, behavioral, psychological, and social sciences relevant to health and illness. These sciences include epidemiology, anthropology, sociology, psychology, physiology, pharmacology, nutrition, neuroanatomy, endocrinology, and immunology.[1] The term is often used interchangeably, but incorrectly, with health psychology.[citation needed] The practice of behavioral medicine encompasses health psychology, but also includes applied psychophysiological therapies such as biofeedback, hypnosis, and bio-behavioral therapy of physical disorders, aspects of occupational therapy, rehabilitation medicine, and physiatry, as well as preventive medicine. In contrast, health psychology represents a stronger emphasis specifically on psychology's role in both behavioral medicine and behavioral health.",
@@ -16,7 +16,7 @@
           "text": "There is some cost for therapy and substance use services."
      },
      {
-          "kye": 3,
+          "_kye": 3,
           "Name": "Dental Care",
           "price": 1500,
           "ds": "Oral hygiene, the practice of keeping the mouth and teeth clean in order to prevent dental disorders,Dentistry, the professional care of teeth, including professional oral hygiene and dental surgery,Oral Surgery, any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth and jaw bones",
@@ -24,7 +24,7 @@
           "text": "The whole family can see the dentist."
      },
      {
-          "kye": 4,
+          "_kye": 4,
           "Name": "Specialty Care",
           "price": 15000,
           "ds": "We are givin the all facilities that we have. Like This all 6 servies ",
@@ -32,7 +32,7 @@
           "text": "No referrals are needed to see specialists."
      },
      {
-          "kye": 5,
+          "_kye": 5,
           "Name": "Hospital Care",
           "price": 1500,
           "ds": "Health care (also health-care or healthcare) is the maintenance or improvement of health via the prevention, diagnosis, treatment, recovery, or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields. Medicine, dentistry, pharmacy, midwifery, nursing, optometry, audiology, psychology, occupational therapy, physical therapy, athletic training, and other health professions are all part of health care. It includes work done in providing primary care, secondary care, and tertiary care, as well as in public health.",
@@ -40,7 +40,7 @@
           "text": "We also cover lab tests and X-rays."
      },
      {
-          "kye": 6,
+          "_kye": 6,
           "Name": "Nurse Advice Line",
           "price": 15000,
           "ds": "NHS Direct was the health advice and information service provided by the National Health Service (NHS), established in March 1998. The nurse-led telephone information service provided residents and visitors in England with healthcare advice 24 hours a day, every day of the year through telephone contact on the national non-geographic 0845 46 47 number.[1] The programme also provided a web based symptom checkers on the NHS Direct website and via mobile, both as apps for iPhone and Android smart phones and a mobile website. ",

@@ -6,7 +6,8 @@ import useAuth from '../Hook/useAuth';
 
 
 const Register = () => {
-     const { SingInWithGoogle, singInwithGitHub } = useAuth();
+     const { SingInWithGoogle, singInwithGitHub, handleEmailChange,
+          handlePasswordChange, heandleRegistration, error } = useAuth();
 
      const history = useHistory()
 
@@ -32,20 +33,20 @@ const Register = () => {
 
      return (
           <div>
-               <Form className="m-5" >
+               <Form onSubmit={heandleRegistration} className="m-5" >
 
                     <div className="row mb-3 ">
                          <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                          <div className="col-sm-10">
-                              <input type="email" className="form-control" id="inputEmail3" required />
+                              <input onBlur={handleEmailChange} type="email" className="form-control" id="inputEmail3" required />
                          </div>
                     </div>
                     <div className="row mb-3">
                          <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                          <div className="col-sm-10">
-                              <input type="password" className="form-control" id="inputPassword3" required />
+                              <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
                               <div className=" text-danger">
-
+                                   {error}
                               </div>
                          </div>
                     </div>

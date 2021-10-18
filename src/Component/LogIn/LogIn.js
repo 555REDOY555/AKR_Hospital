@@ -5,7 +5,8 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 
 const LogIn = () => {
-     const { SingInWithGoogle, singInwithGitHub } = useAuth();
+     const { SingInWithGoogle, singInwithGitHub, handleEmailChange,
+          handlePasswordChange, EnterDetails } = useAuth();
 
      const location = useLocation();
 
@@ -33,13 +34,13 @@ const LogIn = () => {
 
      return (
           <div>
-               <Form className="mx-5 mt-3">
+               <Form onSubmit={EnterDetails} className="mx-5 mt-3">
                     <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                          <Form.Label column sm={2}>
                               Email
                          </Form.Label>
                          <Col sm={10}>
-                              <Form.Control type="email" placeholder="Email" />
+                              <Form.Control onBlur={handleEmailChange} type="email" placeholder="Email" required />
                          </Col>
                     </Form.Group>
 
@@ -48,7 +49,7 @@ const LogIn = () => {
                               Password
                          </Form.Label>
                          <Col sm={10}>
-                              <Form.Control type="password" placeholder="Password" />
+                              <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" required />
                          </Col>
                     </Form.Group>
 

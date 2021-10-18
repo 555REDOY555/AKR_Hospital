@@ -16,7 +16,7 @@ const Servise = () => {
                .then(data => setservise(data))
      }, [])
 
-     console.log(servise)
+     // console.log(servise)
 
 
 

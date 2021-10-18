@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ContainerORg = (props) => {
-     const { Name, img, text, kye } = props.all
+     const { Name, img, text, _kye, price } = props.all
 
      return (
           <div>
@@ -13,7 +13,10 @@ const ContainerORg = (props) => {
                          <div className="card-body">
                               <h5 className="card-title">{Name}</h5>
                               <p className="card-text text-primary ">{text}</p>
-                              <Link to={`/details/${kye}`} ><Button className="btn btn-warning" >Details</Button></Link>
+                              <h2 className="text-primary mb-3 " >
+                                   {price}
+                              </h2>
+                              <Link to={`/details/${_kye}`} ><Button className="btn btn-warning" >Details</Button></Link>
                          </div>
                     </div>
                </div>

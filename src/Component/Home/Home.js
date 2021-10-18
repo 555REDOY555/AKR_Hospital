@@ -3,26 +3,29 @@ import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import './Home.css'
+import photo from '../healthcare-providers.4416666.jpg'
 
 const Home = () => {
      return (
           <div>
 
                <div className="row">
-                    <div className="row BACKGROUND col-md-12 col-12  ">
-                         <div className="col-md-5 col-12 text-white ">
-                              <h3 className="Home-h3-tag-banner "  >Homepage Healthcare / providers</h3>
-                              <h1 className="Home-h1-tag-banner">Healthcare providers</h1>
-                              <h2 className="Home-h2-tag-banner" >This area contains information for healthcare providers.</h2>
+                    <div class="card bg-dark text-white">
+                         <img src={photo} class="card-img" alt="..." />
+                         <div class="card-img-overlay">
+                              <h5 class="card-title Home-h3-tag-banner ">Homepage Healthcare / providers</h5>
+                              <p class="card-text"><h1 className="Home-h1-tag-banner">Healthcare providers</h1></p>
+                              <p class="card-text"> <h2 className="Home-h2-tag-banner" >This area contains information for healthcare providers.</h2></p>
                          </div>
+                         <div className="text-center mt-5">
+                              <h1 >Healthcare provider information</h1>
+                              <p className="mt-5 "  >Our members are free to choose where, when and who provides them with treatment. All we ask is that you register with us for <br />
+                                   recognition first. If you are not registered, but would like to be, please select 'Apply for WPA recognition' below.</p>
+                         </div>
+
                     </div>
-                    <div className="text-center mt-5">
-                         <h1 >Healthcare provider information</h1>
-                         <p className="mt-5 "  >Our members are free to choose where, when and who provides them with treatment. All we ask is that you register with us for <br />
-                              recognition first. If you are not registered, but would like to be, please select 'Apply for WPA recognition' below.</p>
-                    </div>
-                    <div className="mt-5">
-                         <div className="row row-cols-1 row-cols-md-2 g-4 mt-5">
+                    <div className="">
+                         <div className="row row-cols-1 row-cols-md-2 g-4 ">
                               <div className="col">
                                    <div className="card">
 
@@ -78,7 +81,7 @@ const Home = () => {
                          </div>
                     </div>
                </div>
-          </div>
+          </div >
      );
 };
 

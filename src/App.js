@@ -12,6 +12,7 @@ import AuthProvider from './Context/AuthProvider';
 import PrivatRoute from './Component/PrivatRoute/PrivatRoute';
 import NotFound from './NotFound/NotFound';
 import Footer from './Footer/Footer';
+import About from './Component/About/About';
 
 function App() {
   return (
@@ -40,16 +41,13 @@ function App() {
               <Register></Register>
             </Route>
             <Route exact path="/about">
-
-            </Route>
-            <Route path='*'>
-              <NotFound></NotFound>
+              <About></About>
             </Route>
           </Switch>
         </Router>
         <Footer />
       </AuthProvider>
-    </div>
+    </div >
   );
 }
 

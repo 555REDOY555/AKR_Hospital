@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = () => {
      return (
           <div>
-               <div fixed="bottom" className="bg-primary mt-2 fixed-bottom">
+               <div fixed="bottom" className="bg-primary mt-2 sticky-bottom">
                     <div className="row  pb-3 pt-2">
                          <div className="col-md-6 col-12 text-white text-center border-end">
                               <h1>Existing member</h1>

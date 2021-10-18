@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../Hook/useAuth';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import initialize from '../Component/FireBase/FireBaseInit';
 
 
@@ -37,6 +37,7 @@ const Register = () => {
           e.preventDefault();
           createUserWithEmailAndPassword(auth, email, password)
                .then((result) => {
+                    // Verify(email)
                     console.log(result.user)
                     history.push('/home')
                })
@@ -44,6 +45,15 @@ const Register = () => {
                     setError(error.message);
                     // ..
                });
+     }
+
+
+     const Verify = (email) => {
+          sendEmailVerification(auth, email)
+               .then(() => {
+
+               });
+
      }
 
 

@@ -38,6 +38,7 @@ const LogIn = () => {
           signInWithEmailAndPassword(auth, email, password)
                .then((result) => {
                     console.log(result.user)
+
                     history.push('/home')
                })
                .catch((error) => {
@@ -45,6 +46,7 @@ const LogIn = () => {
                     // ..
                });
      }
+
 
 
 
@@ -87,6 +89,7 @@ const LogIn = () => {
                          </Form.Label>
                          <Col sm={10}>
                               <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" required />
+                              <p className="text-danger" >{error}</p>
                          </Col>
                     </Form.Group>
 

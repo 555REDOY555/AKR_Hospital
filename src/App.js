@@ -13,8 +13,12 @@ import PrivatRoute from './Component/PrivatRoute/PrivatRoute';
 import NotFound from './NotFound/NotFound';
 import Footer from './Footer/Footer';
 import About from './Component/About/About';
+import useAuth from './Hook/useAuth';
+import Personal from './Component/Personal/Personal';
 
 function App() {
+
+
   return (
     <div>
       <AuthProvider>
@@ -43,6 +47,9 @@ function App() {
             <Route exact path="/about">
               <About></About>
             </Route>
+            <PrivatRoute path="/personal">
+              <Personal></Personal>
+            </PrivatRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

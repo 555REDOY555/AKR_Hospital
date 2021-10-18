@@ -8,9 +8,9 @@ const About = () => {
                <div class="card  pb-5">
                     <img src='https://www.wpa.org.uk/_nuxt/img/autumn-leaves-floating.7dc6686.jpg' class="card-img   " alt="..." />
                     <div class="card-img-overlay">
-                         <h5 class="card-title Home-h3-tag-banner text-white ">Homepage About us</h5>
-                         <p class="card-text text-white"><h1 className="Home-h1-tag-banner">Healthcare providers</h1></p>
-                         <p class="card-text text-white"> <h2 className="Home-h2-tag-banner" >This area contains information for healthcare providers.</h2></p>
+                         <h5 class="card-title Home-h3-tag-banner text-white ">Homepage /About us</h5>
+                         <p class="card-text text-white"><h1 className="Home-h1-tag-banner">About us</h1></p>
+                         <p class="card-text text-white"> <h2 className="Home-h2-tag-banner" >Find out more about who we are and our commitment to providing the very best service to you.</h2></p>
                     </div>
                </div>
                <Container>
@@ -25,11 +25,11 @@ const About = () => {
                     </div>
                </Container>
 
-               <div className="row mt-5 g-0">
+               <div className="row mt-5 g-0 ">
                     <div className="col-md-6 col-12  mt-5 ">
                          <img width="100%" src="https://www.wpa.org.uk/_nuxt/img/glasgow-tower.0aced81.jpg" alt="" />
                     </div>
-                    <div className="col-md-6 col-12 text-white bg-primary mt-5 ms-0">
+                    <div className="col-md-6  col-12 text-white bg-primary mt-5 ms-0">
                          <Container>
                               <h1 className="ms-5 mt-5" >
                                    Corporate governance

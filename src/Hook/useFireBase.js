@@ -86,7 +86,7 @@ const useFireBase = () => {
 
 
      useEffect(() => {
-          const unsubcribed = onAuthStateChanged(auth, (user) => {
+          onAuthStateChanged(auth, (user) => {
                if (user) {
                     setUser(user)
                } else {
@@ -94,7 +94,7 @@ const useFireBase = () => {
                }
                setIsLoading(false)
           });
-          return () => unsubcribed;
+
      }, [isLoading])
 
      return {

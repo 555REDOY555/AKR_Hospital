@@ -1,7 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hook/useAuth';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import initialize from '../FireBase/FireBaseInit';
@@ -15,9 +15,13 @@ const LogIn = () => {
      const { SingInWithGoogle, singInwithGitHub } = useAuth();
 
      const history = useHistory()
+     const location = useLocation()
      const [error, setError] = useState('')
      const [email, setEmail] = useState("")
      const [password, setPassword] = useState("")
+
+
+
 
 
 

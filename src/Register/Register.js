@@ -114,8 +114,8 @@ const Register = () => {
 
                </Form>
                <div className="text-center">
-                    <Button onClick={handelGoogleLogIn} className="btn btn-warning text-center " >Sing With Google</Button>
-                    <Button onClick={handleGitHubLogIn} className="btn btn-warning text-center ms-3 " >Sing With GitHub</Button>
+                    <Button onClick={handelGoogleLogIn} className="btn btn-warning text-center " >Sign With Google</Button>
+                    <Button onClick={handleGitHubLogIn} className="btn btn-warning text-center ms-3 " >Sign With GitHub</Button>
                </div>
           </div>
      );

@@ -18,9 +18,9 @@ const Header = () => {
                          <Navbar.Collapse id="navbarScroll">
                               <Nav className="d-flex justify-content-end">
                                    <Nav.Link className="navbar" as={HashLink} to="/home">Home</Nav.Link>
-                                   <Nav.Link className="navbar" as={HashLink} to="/About">About</Nav.Link>
-                                   <Nav.Link className="navbar" as={HashLink} to="/personal"> Businesses</Nav.Link>
                                    <Nav.Link className="navbar" as={HashLink} to="/servise">Servise</Nav.Link>
+                                   <Nav.Link className="navbar" as={HashLink} to="/personal"> Businesses</Nav.Link>
+                                   <Nav.Link className="navbar" as={HashLink} to="/About">About</Nav.Link>
                                    <div className="">
                                         {user?.accessToken && <span style={{ color: 'white' }}>Hello {user.displayName} </span>}
 
